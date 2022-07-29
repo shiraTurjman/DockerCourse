@@ -1,0 +1,12 @@
+version: '3.4'
+services:
+  exe4:
+    image: shira8808/exe4:v1
+    build: .
+    volumes:
+      - ~/workspase/docker/exe4/app:/code/volume
+    restart: always
+    tty: true
+volumes:
+  gccvolume:
+    driver: local
